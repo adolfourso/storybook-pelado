@@ -7,7 +7,7 @@ export const Breadcrumb = ({
   ariaLabel = 'breadcrumb navigation',
   ...props
 }) => {
-  const handleKeyDown = (event, item, index) => {
+  const handleKeyDown = (event, item) => {
     if (event.key === 'Enter' || event.key === ' ') {
       event.preventDefault();
       if (item.onClick) {
@@ -28,7 +28,7 @@ export const Breadcrumb = ({
               href={item.href}
               active={item.active || isLast}
               onClick={item.onClick}
-              onKeyDown={(e) => handleKeyDown(e, item, index)}
+              onKeyDown={(e) => handleKeyDown(e, item)}
               tabIndex={item.onClick && !item.active && !isLast ? 0 : undefined}
               role={item.onClick && !item.href ? 'button' : undefined}
               aria-current={isLast ? 'page' : undefined}

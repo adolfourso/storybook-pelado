@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Card as BootstrapCard } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export const Card = ({
   title,
