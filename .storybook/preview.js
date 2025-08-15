@@ -1,3 +1,7 @@
+// Import global styles for educ.ar design system
+import '../src/design-system/global.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 /** @type { import('@storybook/react-vite').Preview } */
 const preview = {
   parameters: {
@@ -25,7 +29,41 @@ const preview = {
           }
         ]
       }
-    }
+    },
+
+    // Add responsive viewports for educ.ar components
+    viewport: {
+      viewports: {
+        mobile1: {
+          name: 'Mobile Small',
+          styles: {
+            width: '320px',
+            height: '568px',
+          },
+        },
+        mobile2: {
+          name: 'Mobile Large',
+          styles: {
+            width: '414px',
+            height: '896px',
+          },
+        },
+        tablet: {
+          name: 'Tablet',
+          styles: {
+            width: '768px',
+            height: '1024px',
+          },
+        },
+        desktop: {
+          name: 'Desktop',
+          styles: {
+            width: '1200px',
+            height: '800px',
+          },
+        },
+      },
+    },
   },
 };
 
