@@ -1,4 +1,3 @@
-import { fn } from 'storybook/test';
 import { Card } from './Card';
 
 export default {
@@ -76,7 +75,7 @@ export const InteractiveCard = {
   args: {
     title: 'Clickable Card',
     text: 'This card is interactive and can be clicked or activated with the keyboard.',
-    onClick: fn(),
+    onClick: () => {},
     ariaLabel: 'Open product details',
   },
 };

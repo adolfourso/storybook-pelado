@@ -1,4 +1,3 @@
-import { fn } from 'storybook/test';
 import { Alert } from './Alert';
 
 export default {
@@ -17,7 +16,7 @@ export default {
     show: { control: 'boolean' },
   },
   args: {
-    onClose: fn(),
+    onClose: () => {},
     children: 'This is an alert message',
   },
 };

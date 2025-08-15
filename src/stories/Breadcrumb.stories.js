@@ -1,4 +1,3 @@
-import { fn } from 'storybook/test';
 import { Breadcrumb } from './Breadcrumb';
 
 export default {
@@ -23,8 +22,8 @@ export const Basic = {
 export const WithClickHandlers = {
   args: {
     items: [
-      { text: 'Home', onClick: fn() },
-      { text: 'Components', onClick: fn() },
+      { text: 'Home', onClick: () => {} },
+      { text: 'Components', onClick: () => {} },
       { text: 'Breadcrumb', active: true },
     ],
   },

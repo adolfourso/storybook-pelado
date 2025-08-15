@@ -1,5 +1,3 @@
-import { fn } from 'storybook/test';
-
 import { Header } from './Header';
 
 export default {
@@ -12,9 +10,9 @@ export default {
     layout: 'fullscreen',
   },
   args: {
-    onLogin: fn(),
-    onLogout: fn(),
-    onCreateAccount: fn(),
+    onLogin: () => {},
+    onLogout: () => {},
+    onCreateAccount: () => {},
   },
 };
 

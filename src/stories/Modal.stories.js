@@ -1,4 +1,3 @@
-import { fn } from 'storybook/test';
 import { Modal } from './Modal';
 
 export default {
@@ -21,7 +20,7 @@ export default {
     keyboard: { control: 'boolean' },
   },
   args: {
-    onHide: fn(),
+    onHide: () => {},
     show: true,
   },
 };
